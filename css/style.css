@@ -47,6 +47,9 @@ img {
     max-width: 100%;
 }
 
+strong {
+    font-weight: var(--fw-bold);
+}
 /* Typography */
 
 h1,
@@ -66,4 +69,27 @@ h2 {
 
 h3 {
     font-size: var(--fs-h3);
+}
+
+.section_title {
+    margin-bottom: .25em;
+}
+
+.section_title-intro {
+    font-weight: var(--fw-reg);
+}
+
+.section_title-intro strong {
+    display: block;
+}
+
+.section_subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section_subtitle-intro,
+.section_subtitle-about-me {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
 }
