@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
@@ -18,7 +21,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo.png" alt="Claire Codes Logo" />
+            <a href="index.html"><img src="img/logo.png" alt="Claire Codes Logo"  /></a>
         </div>
 
         <button class="nav-toggle" aria-label="toggle navigation">
@@ -27,11 +30,11 @@
 
         <nav class="nav">
             <ul class="nav_list">
-                <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
                 <li class="nav_item"><a href="#services" class="nav_link">Work</a></li>
                 <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
                 <li class="nav_item"><a href="https://claire-codes.medium.com/" class="nav_link">Blog</a></li>
-                <li class="nav_item"><a href="portfolio" class="nav_link">Projects</a></li>
+                <li class="nav_item"><a href="portfolio.html" class="nav_link">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -46,7 +49,7 @@
 
     <!-- My services -->
     <section class="my-services" id="services">
-        <h2 class="section_title section_title-services">What I do</h2>
+        <h2 class="section_title section_title-services">What I Do</h2>
         <div class="services">
             <div class="service">
                 <h3>Back End</h3>
@@ -70,7 +73,7 @@
             </div> <!-- / end outside of dev div -->
         </div> <!-- end services -->
 
-        <a href="#portfolio" class="btn">See My Work</a>
+        <a href="portfolio.html" class="btn">See My Work</a>
     </section>
     
     <!--about-->
@@ -87,18 +90,18 @@
 
     <!--Footer-->
     <footer>
-        Contact me at <a href="mailto:hello@world.com" class="footer-link">hello@world.com</a>.
+        <a href="mailto:hello@world.com" class="footer-link"><i class='fas fa-envelope'></i> hello@world.com</a>
         <ul class="social-list">
             <li class="social-item">
-                <a class="social-link" href="#">GitHub</a>
+                <a class="social-link" href="#"><i class="fab fa-github"></i> GitHub</a>
             </li>
 
             <li class="social-item">
-                <a class="social-link" href="#">LinkedIn</a>
+                <a class="social-link" href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </li>
 
             <li class="social-item">
-                <a class="social-link" href="#">Medium</a>
+                <a class="social-link" href="#"><i class="fab fa-medium"></i> Medium</a>
             </li>
         </ul>
     </footer>
