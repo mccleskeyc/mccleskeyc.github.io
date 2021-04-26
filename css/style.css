@@ -42,6 +42,7 @@
 }
 
 /* General Styling */
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -145,7 +146,7 @@ header {
     right: 0;
     z-index: 100;
 
-    transform: translateX(0%);
+    transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1)
 }
 
@@ -180,6 +181,28 @@ header {
     right: 1em;
     top: 1em;
     z-index: 1000;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+    background: var(--clr-light);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+    background: var(--clr-light);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
 }
 
 .section_title {
@@ -450,7 +473,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
