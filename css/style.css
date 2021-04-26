@@ -487,3 +487,10 @@ header {
 .hamburger::after {
     bottom: 6px;
 }
+
+/* portfolio items */
+.portfolio-item {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
