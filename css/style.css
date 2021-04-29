@@ -12,6 +12,7 @@
     
     --fw-reg: 300;
     --fw-bold: 900;
+    --fw-port-tech: 600;
 
     --clr-light: #fff;
     --clr-dark: #303030;
@@ -26,6 +27,7 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+    --fs-port: 2rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -85,7 +87,7 @@ strong {
 }
 
 .btn-port {
-    display: inline-block;
+    display: block;
     padding: .5em .5em;
     background: var(--clr-accent);
     color: var(--clr-light);
@@ -94,6 +96,7 @@ strong {
     transition: transform 200ms ease-in-out;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    text-align: center;
 }
 
 .btn-port:hover {
@@ -380,9 +383,9 @@ header {
   }
   /* Float four columns side by side */
   .column {
-    float: left;
-    width: 25%;
-    padding: 50px 50px;
+    float:left;
+    width: 33%;
+    padding: 25px 10px;
   }
   
   /* Remove extra left and right margins, due to padding in columns */
@@ -398,8 +401,9 @@ header {
   /* Style the counter cards */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px 4.5px 16px 4.5px;
+    padding: 20px;
     background-color: #f1f1f1;
+    border-radius: 5px
   }
   
   /* Responsive columns - one column layout (vertical) on small screens */
@@ -414,6 +418,7 @@ header {
   .portfolio-title {
       text-align: center;
       color: var(--clr-accent);
+      font-size: var(--fs-h2);
   }
 
 
@@ -493,4 +498,28 @@ header {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.read-more {
+    text-decoration: none;
+    color: var(--clr-accent);
+}
+
+.port-subtitle {
+    font-size: var(--fs-port);
+    color: var(--clr-accent);
+    text-align: center;
+}
+
+.port-img {
+    box-shadow: var(--bs);
+}
+
+.port-body {
+    text-align: justify;
+}
+
+.port-tech {
+    font-weight: var(--fw-port-tech);
+    color: var(--clr-accent);
 }
